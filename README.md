@@ -1,4 +1,4 @@
-# To-Do Jquer
+# To-Do jQuery
 Javascript kurssilla luotu projekti, missä rakennetaan To-Do sovellus selaimeen käyttämällä ulkoista kirjastoa (tässä tapauksessa jQuery).
 Sovelluksessa on mahdollisuus lisätä ja poistaa tehtäviä mitä on itse lisännyt.
 
