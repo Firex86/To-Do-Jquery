@@ -8,3 +8,7 @@ Sovelluksessa on mahdollisuus lisätä ja poistaa tehtäviä mitä on itse lisä
 2. Lisää-painikkeesta ohjelma luo uuden tehtävälistauksen. Mikäli tekstikenttä on tyhjä sovellus herjaa tyhjästä tekstikentästä.
 3. Sovelluksella voi merkata tehtävän tehdyksi tai poistaa sen kokonaan.
 4. Sovelluksella voi merkata kaikki listaukset tehdyiksi tai poistaa kaikki listaukset.
+
+# Linkit
+
+1. Linkki sovellukseen: https://teal-melba-c478a2.netlify.app/
