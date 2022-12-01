@@ -1,171 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 body {
-    background-image: linear-gradient(to left, #F4F39A, #f3f175, #ecea48);
-    margin: 5% 5%;
-  }
-
-/* Otsikko "ToDo" */
-.otsikko {
-    font-size: 30px;
-    text-align: center;
-    margin: 0 0 50px 0;
-    color: white;
-    text-shadow: 3px 1px black;
-}
-
-/* Lista */
-.lisaaSisaltoa {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 60% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    height: 100vh;
+    background: #161117;
 }
 
-/* Muotoillaan kirjoitus aluetta */
-.kirjoitusbox {
-    min-height: 50px;
-    height: 50px;
-    max-width: 100%;
-    min-width: 100%;
-    border-radius: 10px;
-    border-color: #333;
-    font-size: 20px;
-    padding: 10px 10px;
-    
-}
-
-/* Muotoillaan footeria*/
-.footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-/* Muotoillaan lisäys nappia */
-.lisaanappi {
-    border-radius: 10px;
-    border-color: #333;
-    background-color: rgb(246, 250, 0);
-    font-size: 20px;
-    content: "\002B";
-}
-
-
-/* Muotoillaan lisäys nappia hiiren ollessa sen päällä */
-.lisaanappi:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-/* Muotoillaan listaa */
-.todolista {
-    margin-top: 20px;
-}
-
-/* Muotoillaan javascriptin luomaa listaa */
-.kaikkipalat {
-    display: grid;
-    grid-template-columns: 60% 5% 5%;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 2px;
+    padding-bottom: 50px;
+    color:  #ffc800;
 }
 
-/* lista elementtiä ja siihen lisättyjä nappeja */
-.pala, .valmis-button, .roska-button {
+h1 {
+    font-size: 60px;
+}
+
+.todo-container {
+    width: 60%;
+
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.input .form-control {
+    background: transparent;
     border: none;
-    background-color: white;
-    min-height: 50px;
-    padding: 10px 10px;
+    height: 50px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #838284;
+    box-shadow: -6px -6px 10px rgb(255, 255, 255, 0.03),
+                6px 6px 10px rgb(10, 8, 10, 0.8),
+                inset -6px -6px 10px rgb(255, 255, 255, 0.05),
+                inset 6px 6px 10px rgb(12, 8, 12, 0.8);
 }
 
-/* Muotoillaan lista elementtiä */
-.pala {
-
-    border-radius: 10px 0 0 10px;
-    display: grid;
-    align-content: center;
-    font-size: 20px;
+.input .form-control:focus {
+    outline: none;
 }
 
-/* Muotoillaan listaan lisättyjä nappeja */
-.valmis-button, .roska-button {
-    font-size: 15px;
+.add .material-icons {
+    background: #ffc800;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161117;
+    border-radius: 50%;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 30px;
 }
 
-
-.roska-button {
-    border-radius: 0 10px 10px 0;
-    background-color: #b65358;
-    
+.todo-list {
+    width: 60%;
 }
 
-.roska-button::before {
-    content: '\2573';
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #716973;
+    background: #221525;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0,0.55);
 }
 
-.roska-button:hover {
-    background-color: #be000a;
-    color: white;
-}
-
-
-.valmis-button {
-    background-color: #6eb95b;
-}
-
-.valmis-button:hover {
-    background-color: #2ac903;
-    color: white;
-}
-
-.valmis-button::before {
-    content: '\2714';
-}
-
-
-.valmis {
-    text-decoration: line-through;
-}
-
-
-
-button {
+.left-cont input {
+    display: none;
     cursor: pointer;
 }
 
-.valmiskaikki {
-    border-radius: 10px;
-    border-color: #333;
-    background-color: rgb(246, 250, 0);
-    font-size: 20px;
-    content: "\002B";
+.left-cont label {
+    position: relative;
+    cursor: pointer;
 }
 
-.poistakaikki {
-    border-radius: 10px;
-    border-color: #333;
-    background-color: rgb(246, 250, 0);
-    font-size: 20px;
-    content: "\002B";
+.left-cont label::before {
+    content: '';
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: #412d46;
+    border-radius: 3px;
 }
 
-.MuutToiminnot {
-    position: fixed;
-    left: 0;
-    margin-top: 5%;
-    padding-bottom: 50px;
-    bottom: 10%;
-    width: 100%;
-	text-align: center;
-    justify-content: center;
-    margin-top: 10px;
+.left-cont input:checked + label::before {
+    background: #ffc800;
+}
+
+.left-cont input:checked + label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #221525;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+
+.remove {
+    color: #ff0047;
+    cursor: pointer;
+    line-height: 1;
+    transform: translateX(48px);
+    transition: .5s;
+}
+
+.remove.active {
+    transform: translateX(0px);
+    transition: .5s;
 }
