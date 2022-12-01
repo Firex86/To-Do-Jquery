@@ -5,7 +5,6 @@ This project was started in our Javascript course. Objective of this project was
 
 1. User can write to input field.
 2. After pressing the "+" sign in the webpage the app will create a new task in the to-do list. 
-2.1. If the input field is empty user will be alerted.
 3. After the task is done user can press the check field on the task and mark it done.
 4. After task is finished user can delete it using the trash can symbol. 
 
