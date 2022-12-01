@@ -12,5 +12,5 @@ This project was started in our Javascript course. Objective of this project was
 # Links
 
 1. Link to the app: https://teal-melba-c478a2.netlify.app/
-2. Link to video presentation of the project: NOT DONE
+2. Link to video presentation of the project: https://laureauas-my.sharepoint.com/:v:/g/personal/1903608_laurea_fi/EWIqtoMpB4NErn9FFu32r4sBDna5lAS5Za03Zge4q53cMw?e=v5SB1D
 3. Link to previous version of the to-do list project: https://github.com/Firex86/To-Do
