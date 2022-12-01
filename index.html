@@ -1,51 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>To Do - List jQuery</title>
+        <link rel="stylesheet" type="text/css" href="Tehtävälista.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    </head>
+        <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="Toiminnot.js" defer></script>
-    <link rel="stylesheet" href="Tehtavalista.css">
-    
-    <title>TO DO - Lista</title>
-</head>
-
-<body>
-
-    <!--Muotoiltu otsikko-->
-    <div class="otsikko">
-        <h1>To Do-LISTA</h1>
-    </div>
-
-        <!--Lisäystoiminto-->
-        <main class="lisaystoiminto">
-            <div class="lisaaSisaltoa">
-                <textarea name="text" class="kirjoitusbox"></textarea>
-                <button type="button" class="lisaanappi"><i class="buttontwo"></i>Lisää</button>
+            <header>
+                <h1>To Do List</h1>
+            </header>
+            <div class="todo-container">
+                <div class="input">
+                    <input type="text" class="form-control" placeholder="New Task" name="">
+                    <div class="add"> <i class="material-icons">add</i> </div>
+                </div>
             </div>
-        </main>
 
-     <!--Listan luonti sijainti-->
-    <div id="listaus" class="todolista">
-      <!--Lista luodaan divin sisälle-->   
-    </div>
-    
+            <ul class="todo-list">
+                
+            </ul>
 
-    <!--Lisätoimintoja-->
-    <div class="MuutToiminnot">
-        <button type="button" class="valmiskaikki">Kaikki Valmis</button>
-        <button type="button" class="poistakaikki">Poista Kaikki</button>
-    </div>
-
-    <!--Footer jossa tekijät ja linkki lähdekoodiin-->
-   <div class="footer">
-	    <h2>Tekijät</h2>
-	    <p1>Firex86</p1>
-	        <p2>ArimoUg</p2>
-        <h3>2022</h3>
-        <a href="https://github.com/Firex86/To-Do">Linkki lähdekoodiin</a>
-    </div>
-</body>
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="Toiminnot.js"></script>
+        </body>
 </html>
