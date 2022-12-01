@@ -17,7 +17,7 @@ body {
     animation: AnimateBody 20s ease infinite;
 }
 
-
+/* Settings for the animated background */
 @keyframes AnimateBody {
     0% {
         background-position: 0% 50%;
@@ -43,6 +43,7 @@ h1 {
     font-size: 60px;
 }
 
+/* Settings for the input field and the add button */
 .todo-container {
     width: 60%;
 
@@ -91,6 +92,7 @@ h1 {
                 6px 6px 10px rgb(10, 8, 10, 0.8);
 }
 
+/* Settings for the task list */
 .todo-list {
     width: 60%;
 }
